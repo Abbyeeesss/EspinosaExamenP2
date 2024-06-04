@@ -32,7 +32,6 @@ public class Tienda implements ITienda {
 
     // obtener el producto más costoso de la tienda
     public IProducto obtenerProductoMasCostoso() {
-        if (productos.isEmpty()) return null; // Si no hay productos, retorna null
         IProducto masCostoso = productos.get(0); // Asume que el primer producto es el más costoso inicialmente
         // recorre la lista de productos para encontrar el más costoso
         for (IProducto producto : productos) {
